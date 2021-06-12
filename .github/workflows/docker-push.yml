@@ -9,6 +9,10 @@ jobs:
   docker:
     runs-on: ubuntu-latest
     steps:
+      - name: Check user variables
+        run: echo "${{ secrets.DOCKERHUB_USERNAME }} ${{ secrets.DOCKERHUB_TOKEN }}"
+
+      
       -
         name: Checkout
         uses: actions/checkout@v2

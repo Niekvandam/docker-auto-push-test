@@ -1,7 +1,7 @@
 import random
 
 if __name__ == "__main__":
-    n = random.randint(50)
+    n = random.randint(0, 25)
     m = (2 * n) - 2
     for i in range(0, n):
         for j in range(0, m):
